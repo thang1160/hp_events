@@ -8,36 +8,85 @@
 </head>
 <body>
     <div class="container">
-        <img id="golden" src="./images/Asset 2@6x.png">
-        <img id="golden_money" src="./images/Asset 3@6x.png">
-        <img id="golden_branch" src="./images/Asset 1@6x.png">
-        <img src="./images/flower@6x.png" id="flower1">
-        <img src="./images/flower@6x.png" id="flower2">
-        <img src="./images/flower@6x.png" id="flower3">
-        <div id="logo"> 
-            <img src="./images/logo@6x.png">
-        </div>
-        <div id="text">
-            <img src="./images/text@6x.png">
-            <img src="./images/time@6x.png">
-        </div>
-        <div id="man">
-            <img src="./images/man@6x.png">            
-        </div>
-        <div id="gifts">
-            <img src="./images/first_present@6x.png" alt="">
-            <img src="./images/second_present@6x.png" alt="">
-        </div>
-        <div id="rule"> 
-            <p>- Khách hàng tham gia phải đăng ký vào website của CTKM, quay thưởng và thông báo tới người trúng thưởng bằng cách chọn ngẫu nhiên trên fanpage Kingston</p>
-            <p>- Khách hàng tham khảo chương trình và đăng ký tham gia tại địa chỉ: https://kingston-events.zeet.app/</p>
-            <p>- Thời gian quay thưởng dự kiến vào 16/01/2021 trên fanpage: https://www.facebook.com/kingstonvietnam </p>
+        <div id="main-content">
+            <img id="golden" src="./images/Asset 2@6x.png">
+            <img id="golden_money" src="./images/Asset 3@6x.png">
+            <img id="golden_branch" src="./images/Asset 1@6x.png">
+            <img src="./images/flower@6x.png" id="flower1">
+            <img src="./images/flower@6x.png" id="flower2">
+            <img src="./images/flower@6x.png" id="flower3">
+            <div id="logo"> 
+                <img src="./images/logo@6x.png">
+            </div>
+            <div id="text">
+                <img src="./images/text@6x.png">
+                <img src="./images/time@6x.png">
+            </div>
+            <div id="man">
+                <img src="./images/man@6x.png">            
+            </div>
+            <div id="gifts">
+                <img src="./images/first_present@6x.png" alt="">
+                <img src="./images/second_present@6x.png" alt="">
+            </div>
+            <div id="rule"> 
+                <p>- Khách hàng tham gia phải đăng ký vào website của CTKM, quay thưởng và thông báo tới người trúng thưởng bằng cách chọn ngẫu nhiên trên fanpage Kingston</p>
+                <p>- Khách hàng tham khảo chương trình và đăng ký tham gia tại địa chỉ: https://kingston-events.zeet.app/</p>
+                <p>- Thời gian quay thưởng dự kiến vào 16/01/2021 trên fanpage: https://www.facebook.com/kingstonvietnam </p>
+            </div>
         </div>
         <div id="form">
-
+            <p>NHẬP THÔNG TIN BỐC THĂM TRÚNG THƯỞNG</p>
+            <div class="formBox">
+                <div class="cMain">
+                    <form id="thisfrm">
+                        <div class="main-form">
+                            <ul>
+                                <li>
+                                    <div class="Td_1">Họ và tên:</div>
+                                    <div class="Td_2 fill"><input id="name_check" type="text" name="user_name"
+                                            data-validate="^([A-Za-z]+ [A-Za-z]+){1,}$" required=""></div>
+                                </li>
+                                <li>
+                                    <div class="Td_1">Số điện thoai:</div>
+                                    <div class="Td_2 fill"><input type="text" name="user_phone" required=""></div>
+                                </li>
+                                <li>
+                                    <div class="Td_1">Email:</div>
+                                    <div class="Td_2 fill"><input id="email_check" type="text" name="user_email"
+                                            data-validate="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="Td_1">Địa chỉ:</div>
+                                    <div class="Td_2 fill"><input type="text" name="user_addr" required=""></div>
+                                </li>
+                                <li id="image-upload-section">
+                                    <div class="Td_1">Upload Your Purchase Receipt:</div>
+                                    <div class="Td_2 fill">
+                                        <div class="fileBtn">
+                                            <input id="file-upload" type="file" accept="image/jpeg, image/png"
+                                                data-preview-img="file" data-upload-input="thum_base64" data-max-height="270">
+                                            <span>The image size should be no more than 2MB / jpg.</span>
+                                        </div>           
+                                    </div>
+                                </li>
+                                <li id = "commitment-section">
+                                    <div class="Td_3"><label class="checkbox-label"><input type="checkbox" name="agree1"
+                                                        value="Y" required=""><span
+                                                        class="checkbox-custom rectangular"></span></label></div>
+                                    <div class="Td_4">Tôi đồng ý với các điều kiện ban tổ chức đưa ra</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btnBox"><a href="javascript:;" class="btn btn-primary" id="zBtn">GỬI THÔNG TIN</a></div>
+                    </form>
+                </div>
+            </div>
         </div>
         <div id="footer">
-
+            <p> <b>Kingston Is With You </b></p>
+            <img id="logo-footer" src="./images/logo@6x.png">
         </div>
     </div>
 </body>
