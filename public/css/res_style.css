@@ -1,10 +1,9 @@
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body{
+    body {
         height: 250vh;
     }
+
     .container {
         height: 100%;
         width: 100%;
@@ -19,8 +18,8 @@
         display: flex;
         flex-direction: column;
         background-image: url("../images/background_mobile.png");
-        background-size:auto 100%;
-        background-position: 75%; 
+        background-size: auto 100%;
+        background-position: 75%;
         margin: 0;
         padding: 0;
     }
@@ -241,12 +240,14 @@
 
     .main-form {
         height: 95%;
+        width: 100%;
     }
 
     #image-upload-section {
         flex-direction: column;
         justify-content: space-between;
         height: 15%;
+        width: 100%;
     }
 
     #image-upload-section .Td_1 {
@@ -261,18 +262,20 @@
     #image-upload-section .Td_2 .fileBtn {
         width: 100% !important;
         justify-content: space-around;
-        padding-left: 5%;
+        padding-left: 0%;
         justify-content: flex-start;
+
+
     }
 
     #image-upload-section .Td_2 .fileBtn input {
         width: 60%;
-        padding-left: 0%;
+        padding-left: 5%;
+        font-size: 12px;
     }
 
     #image-upload-section .Td_2 .fileBtn span {
         font-size: 10px;
-        font-style: italic;
         font-weight: 500;
     }
 
