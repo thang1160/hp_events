@@ -12,3 +12,6 @@ body {
     /* background-color: forestgreen; */
 }
 
+body {
+    height: 250vh;
+}
