@@ -1,4 +1,4 @@
-html,
+/* html, */
 body {
     height: 160vh;
     width: 100%;
@@ -10,8 +10,4 @@ body {
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     /* background-color: forestgreen; */
-}
-
-body {
-    height: 250vh;
 }
