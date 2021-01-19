@@ -1,3 +1,5 @@
+
+
 html,
 body {
     height: 160vh;
@@ -8,6 +10,7 @@ body {
     align-items: center;
     position: relative;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
     /* background-color: forestgreen; */
 }
 
@@ -117,9 +120,8 @@ body {
 }
 
 #rule p {
-    filter: brightness(95%);
-    font-size: 14px;
-    font-weight: bold;
+    filter: brightness(85%);
+    font-size: 12px;
 }
 
 #golden {
@@ -191,8 +193,8 @@ ul li {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 500;
     width: 100%;
 }
 
@@ -201,11 +203,11 @@ ul li div:first-child {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 ul li div:nth-child(2) {
-    width: 60%;
+    width: 80%;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -221,9 +223,10 @@ ul li div:nth-child(2) input {
 }
 
 #form p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 800;
     height: 5%;
+    letter-spacing: 2px;
 }
 
 .formBox {
@@ -279,6 +282,8 @@ ul li div:nth-child(2) input {
 
 #image-upload-section .Td_2 .fileBtn span {
     font-size: 10px;
+    font-style: italic;
+    font-weight: 500;
 }
 
 #commitment-section div:first-child {
@@ -298,15 +303,15 @@ ul li div:nth-child(2) input {
     align-items: center;
 }
 
-.btnBox a{
-  color: white;
-  border: 3px solid;
-  width: 20%;
-  height: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  border-radius: 10px;
-  font-size: 14px;
+.btnBox a {
+    color: white;
+    border: 3px solid;
+    width: 20%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
 }
