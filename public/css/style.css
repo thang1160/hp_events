@@ -1,4 +1,15 @@
 /* html, */
+
+
+@font-face {
+    font-family: iloveyou;
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+html{
+    width: 100%;
+}
+
 body {
     height: 160vh;
     width: 100%;
