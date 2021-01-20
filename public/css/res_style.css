@@ -1,9 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {
-        height: 250vh;
-    }
-
     .container {
         height: 100%;
         width: 100%;
@@ -26,7 +22,8 @@
 
     #form {
         height: 35%;
-        background-image: url("../images/background2@6x.png");
+        /* background-image: url("../images/background2@6x.png"); */
+        background-color: rgb(155, 28, 38);
         background-size: auto;
         background-repeat: no-repeat;
         background-position: center;
@@ -95,7 +92,7 @@
     }
 
     #gifts img {
-        height: 45%;
+        width: 95%;
     }
 
     #rule {
@@ -307,6 +304,22 @@
         font-size: 14px;
     }
 }
+
+
+
+@media only screen and (max-height: 800px) and (max-width: 600px){
+    body {
+        height: 300vh;
+    }
+}
+
+
+@media only screen and (min-height: 800px) and (max-width: 600px){
+    body {
+        height: 250vh;
+    }
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -615,5 +628,29 @@
         text-decoration: none;
         border-radius: 10px;
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #form p {
+        font-size: 10px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+    .btnBox a {
+        width: 30%;
+        height: 40%;
+        font-size: 12px;
+    }
+
+    #image-upload-section .Td_2 .fileBtn {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #image-upload-section {
+        height: 20%;
     }
 }
