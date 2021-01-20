@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Users = require('./models/users')
 
 const URI = "mongodb+srv://admin:duynguyen@kingston.zjhaa.mongodb.net/kingston?retryWrites=true&w=majority"
 

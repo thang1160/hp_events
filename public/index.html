@@ -43,8 +43,8 @@
             <p>NHẬP THÔNG TIN BỐC THĂM TRÚNG THƯỞNG</p>
             <div class="formBox">
                 <div class="cMain">
-                    <form id="thisfrm">
-                        <div class="main-form">
+                    <form id="thisfrm" action="/uploads" method="POST" enctype="multipart/form-data">
+                        <div class="main-form" >
                             <ul>
                                 <li>
                                     <div class="Td_1">Họ và tên:</div>
@@ -63,14 +63,13 @@
                                 </li>
                                 <li>
                                     <div class="Td_1">Địa chỉ:</div>
-                                    <div class="Td_2 fill"><input type="text" name="user_addr" required=""></div>
+                                    <div class="Td_2 fill"><input type="text" name="user_addr"></div>
                                 </li>
                                 <li id="image-upload-section">
                                     <div class="Td_1">Upload Your Purchase Receipt:</div>
                                     <div class="Td_2 fill">
                                         <div class="fileBtn">
-                                            <input id="file-upload" type="file" accept="image/jpeg, image/png"
-                                                data-preview-img="file" data-upload-input="thum_base64" data-max-height="270">
+                                            <input id="file-upload" type="file" accept="image/jpeg, image/png"  name="file" data-preview-img="file" data-upload-input="thum_base64" data-max-height="270">
                                             <span>Kích thước ảnh không được quá 2MB / jpg.</span>
                                         </div>           
                                     </div>
@@ -83,7 +82,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="btnBox"><a href="javascript:;" class="btn btn-primary" id="zBtn">GỬI THÔNG TIN</a></div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>

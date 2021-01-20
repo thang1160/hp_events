@@ -3,8 +3,11 @@ const bodyParser = require('body-parser');
 const path = require("path");
 
 const connectDB = require('./DB/connection')
-
+const userRouter = require('./routers/user.routers')
 const app = express();
+app.use(express.json())
+app.use(bodyParser.json())
+app.use(userRouter);
 const PORT = process.env.PORT || 8080;
 
 connectDB();
