@@ -251,7 +251,7 @@
     }
 
     #image-upload-section .Td_1 {
-        width: 100%;
+        width: 90%;
     }
 
     #image-upload-section .Td_2 {
@@ -264,8 +264,6 @@
         justify-content: space-around;
         padding-left: 0%;
         justify-content: flex-start;
-
-
     }
 
     #image-upload-section .Td_2 .fileBtn input {
