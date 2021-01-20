@@ -2,8 +2,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require("path");
 
+const connectDB = require('./DB/connection')
+
 const app = express();
 const PORT = process.env.PORT || 8080;
+
+connectDB();
 
 app.use(bodyParser.json())
 
