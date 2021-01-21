@@ -1,5 +1,7 @@
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
+
 
     #golden,
     #golden_money,
@@ -8,6 +10,11 @@
     #flower2,
     #flower3 {
         display: none
+    }
+
+    #thisfrm button{
+        width: 25%;
+        margin-left: 32.5%;
     }
 
     .container {
@@ -20,7 +27,7 @@
 
     #main-content {
         /* border: 1px solid; */
-        height: 60%;
+        height: 45%;
         display: flex;
         flex-direction: column;
         background-image: url("../images/background_mobile.png");
@@ -30,10 +37,24 @@
         padding: 0;
     }
 
+    #rule{
+        height: 40%;
+        font-size: 1.6vh;
+        padding: 2%;
+        background-image: url("../images/background2@6x.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        filter: brightness(85%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     #form {
-        height: 35%;
-        /* background-image: url("../images/background2@6x.png"); */
-        background-color: rgb(155, 28, 38);
+        height: 17.5%;
+        background-image: url("../images/background2@6x.png");
         background-size: auto;
         background-repeat: no-repeat;
         background-position: center;
@@ -45,7 +66,7 @@
     }
 
     #footer {
-        height: 5%;
+        height: 2.5%;
         display: flex;
         align-items: center;
         background-color: black;
@@ -94,7 +115,7 @@
     }
 
     #gifts {
-        height: 45%;
+        height: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -300,22 +321,6 @@
         font-size: 14px;
     }
 }
-
-
-
-@media only screen and (max-height: 800px) and (max-width: 600px) {
-    body {
-        height: 300vh;
-    }
-}
-
-
-@media only screen and (min-height: 800px) and (max-width: 600px) {
-    body {
-        height: 250vh;
-    }
-}
-
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -1256,5 +1261,21 @@
 
     #gifts {
         height: 45%;
+    }
+}
+
+@media only screen and (max-height: 640px) and (max-width: 600px) {
+    body {
+        height: 400vh;
+    }
+
+    #rule{
+      font-size: 1.7vh
+    }
+}
+
+@media only screen and (min-height: 641px) and (max-width: 600px) {
+    body {
+        height: 350vh;
     }
 }
