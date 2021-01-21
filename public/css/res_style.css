@@ -39,7 +39,7 @@
 
     #rule{
         height: 40%;
-        font-size: 1.6vh;
+        font-size: 1.4vh;
         padding: 2%;
         background-image: url("../images/background2@6x.png");
         background-size: auto;
@@ -1270,7 +1270,7 @@
     }
 
     #rule{
-      font-size: 1.7vh
+      font-size: 1.5vh
     }
 }
 
