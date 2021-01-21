@@ -1,5 +1,15 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    #golden,
+    #golden_money,
+    #golden_branch,
+    #flower1,
+    #flower2,
+    #flower3 {
+        display: none
+    }
+
     .container {
         height: 100%;
         width: 100%;
@@ -95,20 +105,6 @@
         width: 95%;
     }
 
-    #rule {
-        height: 15%;
-        display: flex;
-        flex-direction: column;
-        color: white;
-        align-items: flex-start;
-        padding: 2% 8% 2% 8%;
-        justify-content: center;
-    }
-
-    #rule p {
-        filter: brightness(85%);
-        font-size: 10px;
-    }
 
     #golden {
         position: absolute;
@@ -307,14 +303,14 @@
 
 
 
-@media only screen and (max-height: 800px) and (max-width: 600px){
+@media only screen and (max-height: 800px) and (max-width: 600px) {
     body {
         height: 300vh;
     }
 }
 
 
-@media only screen and (min-height: 800px) and (max-width: 600px){
+@media only screen and (min-height: 800px) and (max-width: 600px) {
     body {
         height: 250vh;
     }
@@ -341,7 +337,7 @@
     }
 
     #main-content {
-        height: 62.5%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         background-image: url("../images/background.png");
@@ -352,7 +348,7 @@
     }
 
     #form {
-        height: 32.5%;
+        height: 22.5%;
         background-image: url("../images/background2@6x.png");
         background-size: auto;
         background-repeat: no-repeat;
@@ -362,6 +358,17 @@
         align-items: center;
         color: white;
         position: relative;
+    }
+
+    #rule {
+        height: 32.5%;
+        background-image: url("../images/background2@6x.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        filter: brightness(85%);
+        padding: 2%;
     }
 
     #footer {
@@ -423,37 +430,22 @@
         width: 50%;
     }
 
-    #rule {
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        color: white;
-        align-items: flex-start;
-        padding: 4% 15% 4% 8%;
-        justify-content: center;
-    }
-
-    #rule p {
-        filter: brightness(85%);
-        font-size: 12px;
-    }
-
     #golden {
         position: absolute;
-        height: 18%;
+        height: 10%;
     }
 
     #golden_money {
         position: absolute;
-        height: 18%;
+        height: 10%;
         right: 4%;
         top: 1%;
     }
 
     #golden_branch {
         position: absolute;
-        height: 22%;
-        top: 20%;
+        height: 10%;
+        top: 12.5%;
     }
 
     #flower1,
@@ -463,34 +455,34 @@
     }
 
     #flower1 {
-        height: 4%;
-        top: 25%;
+        height: 2.5%;
+        top: 15%;
         left: 50%;
     }
 
     #flower2 {
-        height: 2.5%;
-        top: 24%;
+        height: 1.5%;
+        top: 15%;
         left: 60%;
     }
 
     #flower3 {
-        height: 3.5%;
-        top: 22%;
+        height: 2%;
+        top: 15%;
         left: 85%;
     }
 
     #footer p {
         width: 50%;
-        font-size: 24px;
+        font-size: 32px;
         color: white;
     }
 
     #logo-footer {
-        height: 50%;
+        height: 30%;
     }
 
-    ul {
+    .main-form>ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -503,7 +495,7 @@
         margin: 0px;
     }
 
-    ul li {
+    .main-form>ul li {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
@@ -512,7 +504,7 @@
         width: 100%;
     }
 
-    ul li div:first-child {
+    .main-form ul li div:first-child {
         width: 20%;
         display: flex;
         justify-content: flex-start;
@@ -520,7 +512,7 @@
         padding-left: 15%;
     }
 
-    ul li div:nth-child(2) {
+    .main-form ul li div:nth-child(2) {
         width: 80%;
         position: relative;
         display: flex;
@@ -528,7 +520,7 @@
         align-items: center;
     }
 
-    ul li div:nth-child(2) input {
+    .main-form ul li div:nth-child(2) input {
         width: 75%;
         height: 120%;
         border-radius: 5px;
@@ -629,6 +621,11 @@
         border-radius: 10px;
         font-size: 14px;
     }
+
+    #thisfrm button{
+        width: 15%;
+        margin-left: 42.5%;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -639,6 +636,7 @@
     ul li {
         font-size: 12px;
     }
+
     .btnBox a {
         width: 30%;
         height: 40%;
@@ -654,7 +652,7 @@
         height: 20%;
     }
 
-    
+
     #gifts {
         height: 45%;
     }
