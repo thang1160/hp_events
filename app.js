@@ -1,25 +1,18 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require("path");
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
 
-const connectDB = require('./DB/connection')
-const userRouter = require('./routers/user.routers')
-const app = express();
-app.use(express.json())
-app.use(bodyParser.json())
-app.use(userRouter);
-const PORT = process.env.PORT || 8080;
+var indexRouter = require('./routes/index');
 
-connectDB();
+var app = express();
 
-app.use(bodyParser.json())
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(express.static(path.join(__dirname,'public')))
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
-
-// app.get('/', (req, res) => {
-//     // res.send(`<h1>Listening on ${ PORT }</h1>`);
-//     res.sendFile(path.join((__dirname,'public','index.html')))
-// })
+app.use('/', indexRouter);
 
 module.exports = app;

@@ -1,38 +1,16 @@
 {
-  "name": "kingston_events",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hp-events",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/duynguyenfpt/kingston_events.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/duynguyenfpt/kingston_events/issues"
-  },
-  "homepage": "https://github.com/duynguyenfpt/kingston_events#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parse": "^0.1.0",
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "gridfs-stream": "^1.1.1",
-    "jsonwebtoken": "^8.5.1",
-    "method-override": "^3.0.0",
-    "mongodb": "^3.6.3",
-    "mongoose": "^5.11.12",
-    "mongoose-auto-increment": "^5.0.1",
-    "multer": "^1.4.2",
-    "multer-gridfs-storage": "^4.2.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "mongoose": "^5.11.19",
+    "morgan": "~1.9.1",
     "validator": "^13.5.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
   }
 }

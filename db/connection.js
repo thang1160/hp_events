@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const Users = require('./models/users')
+const Users = require('../db/models/user')
 
-const URI = "mongodb+srv://admin:duynguyen@kingston.zjhaa.mongodb.net/kingston?retryWrites=true&w=majority"
+const URI = "mongodb://localhost:27017/test"
 
 const connectDB = async () => {
   await  mongoose.connect(URI, 

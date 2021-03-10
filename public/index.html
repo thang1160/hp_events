@@ -1,129 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/res_style.css">
-    <title>Kingston Events</title>
-    <link href="https://kingston-event.com/philippines/17yearsno1/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            background-color: white;
+            position: absolute;
+            width: 800px;
+        }
+
+        @media only screen and (min-width: 800px) {
+            #parent {
+                left: 50%;
+                margin-left: -400px;
+            }
+        }
+
+        h2,
+        h3,
+        p,
+        h4 {
+            font-family: Calibri, Arial
+        }
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .container {
+            padding: 40px 45px;
+        }
+
+        #brief_content h4,
+        #brief_content h2 {
+            color: #084a84;
+        }
+
+        #brief_content table tr:last-child td {
+            width: 160px;
+        }
+
+        #brief_content table tr:last-child td p {
+            padding: 0 5px;
+            margin: 0;
+        }
+
+        #time_line {
+            background-color: #d1d2d4;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #time_line>table tr {
+            border-top: 2px solid white;
+        }
+
+        #time_line>table tr td {
+            padding: 4px 10px;
+        }
+
+        #time_line>table tr td:first-child {
+            white-space: nowrap;
+            border-right: 2px solid white;
+            font-weight: bold;
+        }
+
+        #time_line p,
+        #address p:not(:first-child),
+        form p {
+            margin: 0;
+        }
+
+        form p,
+        input,
+        select {
+            margin-bottom: 4px;
+        }
+
+        input,
+        select {
+            padding: 4px;
+        }
+
+        #address {
+            padding-left: 30px;
+        }
+
+        #form-container p {
+            font-size: small;
+        }
+
+        input {
+            width: 90%;
+        }
+
+        #left {
+            float: left;
+            width: 35%;
+            overflow: hidden;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        #center {
+            overflow: hidden;
+            width: fit-content;
+            float: left;
+            margin-top: 85px;
+            margin-right: 35px;
+        }
+
+        #right {
+            overflow: hidden;
+            padding: 30px;
+            border: 2px dotted #d1d2d4;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div id="main-content">
-            <img id="golden" src="./images/Asset 2@6x.png">
-            <img id="golden_money" src="./images/Asset 3@6x.png">
-            <img id="golden_branch" src="./images/Asset 1@6x.png">
-            <img src="./images/flower@6x.png" id="flower1">
-            <img src="./images/flower@6x.png" id="flower2">
-            <img src="./images/flower@6x.png" id="flower3">
-            <div id="logo"> 
-                <img src="./images/logo@6x.png">
-            </div>
-            <div id="text">
-                <img src="./images/text@6x.png">
-                <img src="./images/time@6x.png">
-            </div>
-            <div id="man">
-                <img src="./images/man@6x.png">            
-            </div>
-            <div id="gifts">
-                <img src="./images/first_present@6x.png" alt="">
-                <img src="./images/second_present@6x.png" alt="">
-            </div>
+    <div id="parent">
+        <img style="width: 800px;" src="images/Asset 2@6x.png" alt="">
+        <div class="container" id="brief_content" style="text-align: center;">
+            <h4 style="margin-top: 0px; margin-bottom: 5px;">THƯ MỜI HỘI THẢO TRỰC TUYẾN:</h4>
+            <h2 style="margin-top: 0px">“Sản phẩm & Công nghệ in ấn HP 2021”</h2>
+            <p style="text-align: justify;">Trân trọng kính mời Quý Đối tác tham dự buổi hội thảo thực tuyến Công ty CP
+                Giải pháp Siêu Việt và HP
+                đồng tổ
+                chức. Tại buổi hội thảo, Quý vị sẽ cùng tìm hiểu về những sản phẩm & công nghệ in ấn trong năm 2021 của
+                HP,
+                cũng như những sản phẩm máy tính phù hợp với nhu cầu của doanh nghiệp và thị trường hiện tại.</p>
+            <table>
+                <tr>
+                    <td rowspan="2" style="text-align: left;">
+                        <h3 style="font-weight: bold; margin: 0; padding-bottom: 80px;">Thông tin hội thảo:</h3>
+                    </td>
+                    <td style="border-right: 2px solid #d1d2d4;">
+                        <img width="70px" src="images/Asset 3@6x.png" alt="">
+                    </td>
+                    <td style="border-right: 2px solid #d1d2d4;">
+                        <img width="65px" src="images/Asset 4@6x.png" alt="">
+                    </td>
+                    <td>
+                        <img width="70px" src="images/Asset 5@6x.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-right: 2px solid #d1d2d4;">
+                        <p style="font-weight: bold;">Thứ Tư,</p>
+                        <p style="margin: 0">ngày 24/03/2021</p>
+                    </td>
+                    <td style="border-right: 2px solid #d1d2d4;">
+                        <p style="font-weight: bold;">Từ 14:00 - 15:30</p>
+                    </td>
+                    <td>
+                        <p style="font-weight: bold;">Họp trực tiếp tại Zoom Webinar</p>
+                        <p style="font-size: small;">(Link họp sẽ được gửi khi Quý vị xác nhận tham dự)</p>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div id="form">
-            <p>NHẬP THÔNG TIN BỐC THĂM TRÚNG THƯỞNG</p>
-            <div class="formBox">
-                <div class="cMain">
-                    <form id="thisfrm" action="/uploads" method="POST" enctype="multipart/form-data">
-                        <div class="main-form" >
-                            <ul>
-                                <li>
-                                    <div class="Td_1">Họ và tên:</div>
-                                    <div class="Td_2 fill"><input id="name_check" type="text" name="user_name"
-                                            data-validate="^([A-Za-z]+ [A-Za-z]+){1,}$" required=""></div>
-                                </li>
-                                <li>
-                                    <div class="Td_1">Số điện thoai:</div>
-                                    <div class="Td_2 fill"><input type="text" name="user_phone" required=""></div>
-                                </li>
-                                <li>
-                                    <div class="Td_1">Email:</div>
-                                    <div class="Td_2 fill"><input id="email_check" type="text" name="user_email"
-                                            data-validate="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" required="">
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="Td_1">Địa chỉ:</div>
-                                    <div class="Td_2 fill"><input type="text" name="user_addr"></div>
-                                </li>
-                                <li id="image-upload-section">
-                                    <div class="Td_1">Upload Your Purchase Receipt:</div>
-                                    <div class="Td_2 fill">
-                                        <div class="fileBtn">
-                                            <input id="file-upload" type="file" accept="image/jpeg, image/png"  name="file" data-preview-img="file" data-upload-input="thum_base64" data-max-height="270">
-                                            <span>Kích thước ảnh không được quá 2MB / jpg.</span>
-                                        </div>           
-                                    </div>
-                                </li>
-                                <li id = "commitment-section">
-                                    <div class="Td_3"><label class="checkbox-label"><input type="checkbox" name="agree1"
-                                                        value="Y" required=""><span
-                                                        class="checkbox-custom rectangular"></span></label></div>
-                                    <div class="Td_4">Tôi đồng ý với các điều kiện ban tổ chức đưa ra</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+        <div class="container" id="regis_form" style="padding-top: 0">
+            <div id="form-container">
+                <div id="left">
+                    <h2 style="font-weight: bold; margin: 0;">Đăng ký</h2>
+                    <h2 style="font-weight: bold; margin: 0;">hội nghị trực tuyến</h2>
+                    <p style="margin: 0;">Vui lòng điền đầy đủ thông tin vào mẫu bên.</p>
+                    <p style="margin: 0;">Chúng tôi sẽ liên lạc sớm nhất khi có thể</p>
+                </div>
+                <div id="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="fill: #d1d2d4" width='30' height='30'>
+                        <path d="M 17,10 3,17 3,3 z" />
+                    </svg>
+                </div>
+                <div id="right">
+                    <form action="/insert" method="post">
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Họ và tên</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input style="width: 95%;" type="text" name="name" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <p>Đơn vị công tác</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input style="width: 95%;" type="text" name="work" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Số điện thoại</p>
+                                </td>
+                                <td>
+                                    <p>Email</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="phone" id=""></td>
+                                <td><input type="email" name="email" id=""></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;" colspan="2">
+                                    <input style="width: auto; margin-top: 16px;" type="submit" value="Đăng ký">
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
             </div>
         </div>
-        <div id = "rule">
-            <p id="rule-title"><b> <i> Điều khoản và điều kiện tham gia chương trình Bốc thăm may mắn Kingston </i></b></p>
-            <p><b>Thể lệ: </b> Khi mua sản phẩm Kingston bất kỳ, bạn có cơ hội tham gia chương trình bốc thăm trúng thưởng các quà tặng giá trị
-            và hấp dẫn.</p>
-            <p> <b>Các giải thưởng tổng trị giá 40.000.000 VND</b> </p>
-            <ul>
-                <li>Giải nhất: 01 iPhone 12 Pro 128GB</li>
-                <li>Giải nhì: 02 combo SSD KC2500 500GB và Fury RGB 3200 32GB</li>
-            </ul>
-            <p> <b>Các lưu ý khác: </b></p>
-            <ul>
-                <li>Chương trình khuyến mãi chỉ dành cho cư dân lưu trú tại Việt Nam. Người tham gia dưới mười ba (13) tuổi phải được sự
-                đồng ý của cha mẹ và/hoặc người giám hộ trước khi tham gia chương trình Bốc thăm may mắn.</li>
-                <li>Chương trình này có hiệu lực từ ngày 21 tháng 01 năm 2021 đến ngày 14 tháng 03 năm 2021 và chỉ áp dụng tại các đại lý
-                bán hàng Kingston trên toàn quốc và các cửa hàng chính hãng của Kingston trên Shopee và Lazada.</li>
-                <li>Khi tham gia chương trình Bốc thăm may mắn này, người tham gia đồng ý sử dụng thông tin được gửi trong biểu mẫu rút thăm
-                trúng thưởng mà không được trả tiền cho các mục đích quảng cáo và tiếp thị của Kingston.</li>
-                <li>Mỗi người có thể tham gia nhiều lượt tham gia bốc thăm may mắn. Một biên nhận/giao dịch/hóa đơn sẽ chỉ được coi là một
-                phiếu. Người tham gia phải giữ chứng từ/hóa đơn gốc của mình để nhận giải thưởng.</li>
-                <li>Những người chiến thắng chương trình Bốc thăm may mắn sẽ được công bố trên trang Fanpage chính thức của Kingston Việt
-                Nam và được thông báo trước ngày 27 tháng 03 năm 2021 qua email thông báo giải thưởng.</li>
-                <li>Người thắng cuộc chương trình Bốc thăm may mắn phải phản hồi trong vòng một tuần (07 ngày) kể từ ngày được thông báo để
-                trở thành người chiến thắng đủ điều kiện. Người thắng cuộc không phản hồi trong thời gian yêu cầu sẽ bị mất quyền nhận
-                giải thưởng.</li>
-                <li>Giải thưởng sẽ được chuyển đến người thắng cuộc đủ điều kiện trong vòng 14 ngày làm việc kể từ ngày thông báo và xác
-                nhận người thắng cuộc.</li>
-                <li>Trong trường hợp có người tham gia bị loại khỏi chương trình Bốc thăm may mắn, Kingston có toàn quyền quyết định xem có
-                nên chọn người tham gia thay thế hay không. Bất kỳ người tham gia tiếp theo nào sẽ được chọn theo cùng tiêu chí với
-                người tham gia ban đầu và sẽ tuân theo các Điều khoản và Điều kiện.</li>
-                <li>Giải thưởng không thể chuyển nhượng và không thể quy đổi thành tiền mặt hoặc các vật phẩm khác. Kingston có quyền thay
-                thế bất kỳ giải thưởng nào bằng các vật phẩm có giá trị tương tự mà không cần thông báo trước.</li>
-                <li>Việc hoàn tiền và đổi hàng sẽ chỉ được phép đối với những sản phẩm đã nhận bị hỏng hoặc sai quy cách.</li>
-                <li>Kingston có quyền loại tất cả các phiếu dự thi không đáp ứng các quy tắc và quy định của chương trình khuyến mãi. Chúng
-                bao gồm các phiếu được gửi với thông tin không hợp lệ hoặc không chính xác.</li>
-                <li>Kingston có quyền sửa đổi các Điều khoản & Điều kiện của chương trình khuyến mãi này bất kỳ lúc nào mà không cần thông
-                báo trước.</li>
-            </ul>
+        <div class="container" id="time_line">
+            <h4 style="margin-top: 0;">CHƯƠNG TRÌNH HỘI THẢO</h4>
+            <table>
+                <tr>
+                    <td>
+                        <p>14:00 - 14:15</p>
+                    </td>
+                    <td>
+                        <p>Check-in & đón khách</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>14:15 - 14:20</p>
+                    </td>
+                    <td>
+                        <p>Khai mạc hội thảo</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>14:20 - 14:40</p>
+                    </td>
+                    <td>
+                        <p>“Giới thiệu sản phẩm và cách lựa chọn máy in phù hợp”</p>
+                        <p>Trình bày bởi anh Lê Minh Hiếu - Chuyên viên Đào tạo HP</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>14:40 - 14:50</p>
+                    </td>
+                    <td>
+                        <p>Mini game</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>14:50 - 15:10</p>
+                    </td>
+                    <td>
+                        <p>“Giới thiệu sản phẩm mới và các công nghệ bảo mật”</p>
+                        <p>Trình bày bởi anh Lê Minh Hiếu - Chuyên viên Đào tạo HP</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>15:10 - 15:20</p>
+                    </td>
+                    <td>
+                        <p>“Cập nhật chương trình bán hàng & khuyến mãi” bởi Đại diện Siêu Việt</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>15:20 - 15:30</p>
+                    </td>
+                    <td>
+                        <p>Hỏi đáp</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>15:30</p>
+                    </td>
+                    <td>
+                        <p>Kết thúc hội thảo</p>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div id="footer">
-            <p> <b>Kingston Is With You </b></p>
-            <img id="logo-footer" src="./images/logo@6x.png">
+        <div class="container">
+            <footer>
+                <table>
+                    <tr>
+                        <td style="border-right: 2px solid #d1d2d4;">
+                            <p style="font-weight: bold; margin-bottom: 0;">Hội thảo hoàn toàn miễn phí và chỉ có 80
+                                suất
+                                tham dự.</p>
+                            <p style="font-style: italic; margin-top: 0;">Để tham dự hội thảo, vui lòng đăng ký ngay
+                                tại:
+                            </p>
+                            <p>Hân hạnh được đón tiếp Quý khách tại Hội thảo.</p>
+                            <p style="font-weight: bold;">Xin trân trọng cảm ơn!</p>
+                        </td>
+                        <td id="address">
+                            <p style="font-style: italic; margin-top: 0;">Mọi thông tin, xin vui lòng liên hệ:</p>
+                            <p style="font-weight: bold;">Đơn vị tổ chức: Công ty CP Phát triển</p>
+                            <p style="font-weight: bold;">Thương hiệu Trần Gia</p>
+                            <p>Ms. Chi (HP Agency)</p>
+                            <p>Email: <a href="chile@trangia.vn">chile@trangia.vn</a></p>
+                            <p>Tel: 0935 591 386</p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
         </div>
     </div>
 </body>
+
 </html>
