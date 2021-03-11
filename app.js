@@ -2,6 +2,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const connectDB = require('./db/connection')
+
+connectDB();
 
 var indexRouter = require('./routes/index');
 

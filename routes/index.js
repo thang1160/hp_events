@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../db/models/user');
-const connectDB = require('../db/connection')
-
-connectDB();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -18,7 +15,7 @@ router.post('/insert', async function (req, res, next) {
     email: req.body.email
   })
 
-  console.log(user)
+  // console.log(user)
 
   await user.save()
   res.redirect('/')
