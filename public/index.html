@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="THƯ MỜI HỘI THẢO TRỰC TUYẾN" />
+    <meta property="og:description" content="Trân trọng kính mời Quý Đối tác tham dự buổi hội thảo thực tuyến Công ty CP Giải pháp Siêu Việt và HP đồng tổ chức" />
+    <meta property="og:image"
+        content="http://localhost:8080/images/Asset 2@6x.png" />
+    <title>THƯ MỜI HỘI THẢO TRỰC TUYẾN</title>
     <style>
         #parent {
             background-color: white;
@@ -126,6 +130,9 @@
             border: 2px dotted #d1d2d4;
         }
     </style>
+    <link rel="stylesheet" href="stylesheets/toastr.min.css">
+    <script src="javascripts/jquery-3.6.0.min.js"></script>
+    <script src="javascripts/toastr.min.js"></script>
 </head>
 
 <body>
@@ -326,6 +333,19 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('success');
+            console.log(myParam)
+            if (myParam == "true") {
+                toastr.success('Đã đăng ký thành công')
+            } else if (myParam == "false") {
+                toastr.error('Đăng ký thất bại')
+            }
+        })
+    </script>
 </body>
 
 </html>
